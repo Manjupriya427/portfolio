@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            background: #2d4257;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .heading h2 {
+            color: #2d4257;
+            font-size: 40px;
+        }
+
+        .container {
+            display: flex;
+            background: white;
+            border: 1px solid #ddd;
+        }
+
+        .box {
+            flex: 1;
+            padding: 30px;
+            border-right: 1px solid #ddd;
+        }
+
+        .box:last-child {
+            border-right: none;
+        }
+
+        .box h3 {
+            color: #2d4257;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .box h4 {
+            margin: 15px 0;
+        }
+
+        .box p {
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .box ul {
+            margin-left: 20px;
+        }
+
+        .box li {
+            margin-bottom: 12px;
+        }
+
+        .box a {
+            color: #2196f3;
+            text-decoration: none;
+        }
+
+        .review {
+            margin-top: 40px;
+        }
+
+        .review h2 {
+            color: #2d4257;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        .reviews {
+            display: flex;
+        }
+
+        .card {
+            flex: 1;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 25px;
+            margin-right: 10px;
+            line-height: 1.8;
+        }
+
+        .card:last-child {
+            margin-right: 0;
+        }
+
+        #contact {
+            background: white;
+            margin-top: 35px;
+            padding: 30px;
+            border: 1px solid #ddd;
+        }
+
+        #contact h2 {
+            color: #2d4257;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        #contact p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #2d4257;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            nav a {
+                font-size: 16px;
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .heading h2 {
+                font-size: 28px;
+            }
+
+            .container,
+            .reviews {
+                flex-direction: column;
+            }
+
+            .box {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .box:last-child {
+                border-bottom: none;
+            }
+
+            .card {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .card:last-child {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="profile.jpg" alt="My Profile Photo" class="profile">
+
+        <h1>Manju Priya V</h1>
+        <p>Computer Science Student | Web Developer</p>
+
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="heading">
+        <h2>Web Developer &amp; Machine Learning Enthusiast</h2>
+    </section>
+
+    <div class="container">
+
+        <div class="box">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript Basics</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Machine Learning</li>
+                <li>SQL</li>
+                <li>Git &amp; GitHub</li>
+            </ul>
+        </div>
+
+        <div class="box" id="projects">
+            <h3>Projects</h3>
+
+            <h4>FedKidneyNet</h4>
+            <p>
+                Privacy-Preserving Federated Learning Framework
+                for Multi-Class Kidney CT Image Classification
+                using EfficientNet-B0.
+            </p>
+
+            <hr>
+
+            <h4>Phishing Email Detection</h4>
+            <p>
+                Developed a phishing email detection system
+                using Machine Learning and Python.
+            </p>
+
+            <hr>
+
+            <h4>Portfolio Website</h4>
+            <p>
+                Designed a portfolio website using HTML5
+                and CSS3.
+            </p>
+
+            <br>
+
+            <a href="https://www.linkedin.com/" target="_blank"
+               rel="noopener noreferrer">LinkedIn Profile</a>
+
+            <br><br>
+
+            <a href="https://github.com/" target="_blank"
+               rel="noopener noreferrer">GitHub Profile</a>
+        </div>
+
+        <div class="box" id="about">
+            <h3>About Me</h3>
+
+            <p><b>Name:</b> Manju Priya V</p>
+            <p><b>Degree:</b> B.E. Computer Science Engineering</p>
+            <p><b>College:</b> Your College Name</p>
+            <p><b>Email:</b> yourmail@gmail.com</p>
+            <p><b>Location:</b> Tamil Nadu, India</p>
+
+            <h4>Interests</h4>
+            <ul>
+                <li>Web Development</li>
+                <li>Machine Learning</li>
+                <li>Cyber Security</li>
+                <li>Research</li>
+                <li>UI Design</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <section class="review">
+        <h2>Peer Reviews</h2>
+
+        <div class="reviews">
+            <div class="card">
+                "Manju consistently delivers high-quality projects
+                with excellent technical knowledge."
+            </div>
+
+            <div class="card">
+                "Very hardworking and passionate about Machine
+                Learning and Web Development."
+            </div>
+
+            <div class="card">
+                "Excellent teamwork, communication skills and
+                project presentation."
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: yourmail@gmail.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+        <p>LinkedIn: linkedin.com/in/yourname</p>
+        <p>GitHub: github.com/yourname</p>
+    </section>
+
+    <footer>
+        &copy; 2026 Manju Priya V | All Rights Reserved
+    </footer>
+
+</body>
+</html>
